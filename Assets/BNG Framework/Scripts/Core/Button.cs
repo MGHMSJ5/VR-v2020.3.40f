@@ -130,9 +130,9 @@ namespace BNG {
         public virtual void OnButtonDown() {
 
             // Play sound
-            if (audioSource && ButtonClick) {
-                audioSource.clip = ButtonClick;
-                audioSource.Play();
+          if (audioSource && ButtonClick) {
+             audioSource.clip = ButtonClick;
+             audioSource.Play();
             }
 
             // Call event
