@@ -20,7 +20,7 @@ public class RandomObjSpawner : MonoBehaviour
     public void SpawnObjects()
     {
         int RandomIndex = Random.Range(0, myObjects.Length);
-        Vector3 randomSpawnPosition = new Vector3(Random.Range(-10, 11), 1, Random.Range(-10, 11));
+        Vector3 randomSpawnPosition = new Vector3(Random.Range(-10, 11), 0, Random.Range(-10, 11));
 
         Instantiate(myObjects[RandomIndex], randomSpawnPosition, Quaternion.identity);
     }
