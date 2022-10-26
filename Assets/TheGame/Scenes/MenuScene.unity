@@ -1320,7 +1320,7 @@ GameObject:
   - component: {fileID: 685135517}
   - component: {fileID: 685135516}
   m_Layer: 5
-  m_Name: Exit
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1422,7 +1422,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 526526099}
         m_TargetAssemblyTypeName: MenuCode, Assembly-CSharp
-        m_MethodName: ExitGame
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1777,7 +1777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit Game
+  m_Text: Quit Game
 --- !u!222 &1157317119
 CanvasRenderer:
   m_ObjectHideFlags: 0
