@@ -660,7 +660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1048657428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,6 +1444,11 @@ PrefabInstance:
       propertyPath: _localPlayer.rightHand
       value: 
       objectReference: {fileID: 1198076221}
+    - target: {fileID: 6085265510487673664, guid: fca9d4afb3743274e8f7da14019d7e0b,
+        type: 3}
+      propertyPath: cube
+      value: 
+      objectReference: {fileID: 955935459}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fca9d4afb3743274e8f7da14019d7e0b, type: 3}
 --- !u!1 &1885297900
