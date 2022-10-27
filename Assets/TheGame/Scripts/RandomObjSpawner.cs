@@ -6,10 +6,17 @@ public class RandomObjSpawner : MonoBehaviour
 {
   public GameObject[] myObjects;
 
+    MenuCode menuCode;
+    [SerializeField] GameObject menuScript;
+
+    private void Start()
+    {
+        menuCode = menuScript.GetComponent<MenuCode>();
+    }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && menuCode.checkBool)
         //Input.GetKeyDown(KeyCode.Space)
         //BNG.InputBridge.Instance.YButton
         {

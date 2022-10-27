@@ -11,11 +11,33 @@ public class MenuCode : MonoBehaviour
 
     public Slider SoundSlider;
     public static float sliderValue = 0.5f;
+    //new
+    public static bool ifTherapist;
+    public bool checkBool;
 
 
     private void Start()
     {
+        checkBool = ifTherapist;
         SoundSlider.value = sliderValue;
+    }
+
+    //new
+    public void PlayGameTherapist() //a function that'll be called whenever the 'Play'button is pressed
+    {
+        ifTherapist = true;
+        sliderValue = SoundSlider.value;
+        BlacknessAppear.SetActive(true); //activate the black appearing
+        StartCoroutine(WaitForBlack()); //wait 1 sec (for the black to appear), then change scene
+
+    }
+    public void PlayGamePatient() //a function that'll be called whenever the 'Play'button is pressed
+    {
+        ifTherapist = false;
+        sliderValue = SoundSlider.value;
+        BlacknessAppear.SetActive(true); //activate the black appearing
+        StartCoroutine(WaitForBlack()); //wait 1 sec (for the black to appear), then change scene
+
     }
 
     public void PlayGame() //a function that'll be called whenever the 'Play'button is pressed
