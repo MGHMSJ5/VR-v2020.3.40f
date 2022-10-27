@@ -674,6 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 955935459}
+  menuScript: {fileID: 0}
 --- !u!4 &1048657429
 Transform:
   m_ObjectHideFlags: 0
@@ -1124,6 +1125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1385526443}
   - component: {fileID: 1385526442}
+  - component: {fileID: 1385526444}
   m_Layer: 0
   m_Name: SpawnerRandomObj
   m_TagString: Untagged
@@ -1167,6 +1169,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385526444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385526441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a84593163a780941b62026909046d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cube: {fileID: 955935459}
+  menuScript: {fileID: 1972451160}
 --- !u!1001 &1395645481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1552,6 +1568,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1972451160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2895110274077605641, guid: 79d6eb9496d140a4c953d23ac9677d1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1395645481}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2022852986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8516297022803756428, guid: 4ac7df741a9c0a2418ec19477729ee3d,
