@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: ceb179c8ffdd4d84e876780d091ea370
+guid: db2febaafbc54bb4591722f25b455f75
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable:
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: -4027686426356288868
+    second: metarig|Walking
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|ArmatureAction
-      takeName: Armature|ArmatureAction
+      name: metarig|Walking
+      takeName: metarig|Walking
       internalID: 0
       firstFrame: 0
-      lastFrame: 194
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
