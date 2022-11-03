@@ -888,7 +888,7 @@ MonoBehaviour:
   - {fileID: 2734517960114285904, guid: b8434954549db9c44892847ad3aaa07c, type: 3}
   - {fileID: 2035482895591505638, guid: 6fed78e641c91214abd2fe0b3dce0ec9, type: 3}
   - {fileID: 9053954914961221609, guid: 26c8f56867aa204409f9e6329b387b41, type: 3}
-  menuScript: {fileID: 0}
+  menuScript: {fileID: 634575431}
 --- !u!1001 &1180822166
 PrefabInstance:
   m_ObjectHideFlags: 0
