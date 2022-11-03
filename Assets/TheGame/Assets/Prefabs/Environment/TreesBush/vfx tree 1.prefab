@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1368940099283341021}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.9443682, y: 2.3362734, z: 3.2531946}
+  m_LocalPosition: {x: -0.06, y: -0.51, z: -0.62}
   m_LocalScale: {x: 0.4640859, y: 0.4640859, z: 0.4640859}
   m_Children: []
   m_Father: {fileID: 3816491466646910771}
@@ -110,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3435730968656788649}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.7423669, y: 0.15849155, z: 2.8047051}
+  m_LocalPosition: {x: -0.06, y: -0.51, z: -0.62}
   m_LocalScale: {x: 0.5978682, y: 0.5978682, z: 0.5978682}
   m_Children: []
   m_Father: {fileID: 3816491466646910771}
@@ -190,7 +190,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4592887016223157641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.6614776, y: -2.1869502, z: 1.710008}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6768750793373756216}
@@ -283,17 +283,17 @@ PrefabInstance:
     - target: {fileID: 3678490145720992027, guid: 3b0d6617fe419ca40a3ad3d58aff9cf3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3964777
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3678490145720992027, guid: 3b0d6617fe419ca40a3ad3d58aff9cf3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1269503
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 3678490145720992027, guid: 3b0d6617fe419ca40a3ad3d58aff9cf3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.0799918
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 3678490145720992027, guid: 3b0d6617fe419ca40a3ad3d58aff9cf3,
         type: 3}
@@ -334,6 +334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FireflySwarm Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3678490145721294139, guid: 3b0d6617fe419ca40a3ad3d58aff9cf3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b0d6617fe419ca40a3ad3d58aff9cf3, type: 3}
