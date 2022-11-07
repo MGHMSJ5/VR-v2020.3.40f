@@ -7,7 +7,6 @@ public class RandomObjSpawner : MonoBehaviour
 {
   public GameObject[] myObjects;
     private string cubeName;
-
     
     private void Start()
     {

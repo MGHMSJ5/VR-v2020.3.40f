@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7526407225402589377}
   - component: {fileID: 5712184078526014083}
   - component: {fileID: 8230910479873159694}
+  - component: {fileID: 3935795261429047549}
   m_Layer: 0
   m_Name: RockPile1
   m_TagString: Untagged
@@ -75,6 +76,18 @@ MonoBehaviour:
   _childViews:
   - componentID: 1
     component: {fileID: 6082962657549426885}
+--- !u!114 &3935795261429047549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6369438036783418367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10337e2f527fb44791ee162546f7224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7595899998658693795
 PrefabInstance:
   m_ObjectHideFlags: 0
