@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AI_movement_script : MonoBehaviour
 {
-    public float movementSpeed = 2f;
-    public float rotationSpeed = 70f;
+    public float movementSpeed = 3f;
+    public float rotationSpeed = 50f;
 
     private bool isWandering = false;
     private bool isRotatingLeft = false;
