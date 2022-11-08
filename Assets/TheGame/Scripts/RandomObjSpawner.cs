@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Normal.Realtime;
 
 public class RandomObjSpawner : MonoBehaviour
 {
-  public GameObject[] myObjects;
+    public GameObject[] myObjects;
+    private string prefabName;
 
     MenuCode menuCode;
     [SerializeField] GameObject menuScript;
@@ -28,7 +30,9 @@ public class RandomObjSpawner : MonoBehaviour
     {
         int RandomIndex = Random.Range(0, myObjects.Length);
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-10, 11), 0, Random.Range(-10, 11));
+        prefabName = myObjects[RandomIndex].name;
 
-        Instantiate(myObjects[RandomIndex], randomSpawnPosition, Quaternion.identity);
+        //Instantiate(myObjects[RandomIndex], randomSpawnPosition, Quaternion.identity);
+        Realtime.Instantiate(prefabName);
     }
 }
