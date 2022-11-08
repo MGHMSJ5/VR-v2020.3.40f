@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7526407225402589377}
   - component: {fileID: 5712184078526014083}
-  - component: {fileID: 8053606042557083594}
   - component: {fileID: 5380920286753663144}
   m_Layer: 0
   m_Name: RockPile1
@@ -53,27 +52,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8053606042557083594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6369438036783418367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _realtime: {fileID: 0}
-  _sceneViewUUID: 
-  _viewUUID: 
-  _sceneViewPreventOwnershipTakeover: 0
-  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
-  _sceneViewDestroyWhenLastClientLeaves: 1
-  _components: []
-  _childViews: []
 --- !u!114 &5380920286753663144
 MonoBehaviour:
   m_ObjectHideFlags: 0

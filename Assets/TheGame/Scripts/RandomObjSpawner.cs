@@ -18,7 +18,7 @@ public class RandomObjSpawner : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && menuCode.checkBool)
+        if(Input.GetKeyDown(KeyCode.G) && menuCode.checkBool)
         //Input.GetKeyDown(KeyCode.Space)
         //BNG.InputBridge.Instance.YButton
         {
