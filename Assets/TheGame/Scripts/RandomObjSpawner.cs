@@ -18,6 +18,8 @@ public class RandomObjSpawner : MonoBehaviour
 
     StartLocation startLocation;
 
+    public GameObject finishedText;
+
     private void Start()
     {
         menuCode = menuScript.GetComponent<MenuCode>();
@@ -49,9 +51,9 @@ public class RandomObjSpawner : MonoBehaviour
 
             }
         }
-        if (SpawnCounter + 1 > myObjects.Length)
+        if (SpawnCounter == myObjects.Length)
         {
-            Debug.Log("No spowning");
+            finishedText.SetActive(true);
         }
 
     }
