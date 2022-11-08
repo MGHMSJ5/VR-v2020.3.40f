@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11287acd2734774397f5b90ee7ff90f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLocation: {x: 0, y: 0, z: 0}
+  startLocation: {x: -34.7307, y: -9.512802, z: 16.66202}
   good: {fileID: 7775076192485767032}
   bad: {fileID: 6412060883597854006}
   activateGood: 0

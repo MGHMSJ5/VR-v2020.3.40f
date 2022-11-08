@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8841608645474695966}
   - component: {fileID: 2157157918458817084}
+  - component: {fileID: 1699372885126416353}
+  - component: {fileID: 7812037681075359724}
+  - component: {fileID: 314865609958421192}
   m_Layer: 0
   m_Name: Greeny
   m_TagString: Untagged
@@ -51,6 +54,57 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1699372885126416353
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148497965689816627}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!195 &7812037681075359724
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148497965689816627}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.4
+  m_Speed: 0.8
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.06
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &314865609958421192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148497965689816627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afab0ced26b9e904ba9e3fb25fb65066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
 --- !u!1001 &6040055117164617696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 7319931407444385059, guid: b7a3d24992d479a4ca7607028756c426,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.463
       objectReference: {fileID: 0}
     - target: {fileID: 7319931407444385059, guid: b7a3d24992d479a4ca7607028756c426,
         type: 3}

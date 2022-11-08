@@ -25,26 +25,33 @@ public class RandomObjSpawner : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G) && menuCode.checkBool)
-        //BNG.InputBridge.Instance.YButton
+        if (SpawnCounter < myObjects.Length)
         {
-            startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
-            prefabName = myObjects[SpawnCounter].name;
-            startLocation.activateGood = true;
-            Realtime.Instantiate(prefabName);
-            SpawnCounter++;
-            
+            if (Input.GetKeyDown(KeyCode.G) && menuCode.checkBool || Input.GetKeyDown(KeyCode.H) && menuCode.checkBool)
+            //BNG.InputBridge.Instance.YButton
+            {
+                startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
+                prefabName = myObjects[SpawnCounter].name;
+                startLocation.activateGood = true;
+                Realtime.Instantiate(prefabName);
+                SpawnCounter++;
+
+            }
+
+            if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool)
+            //BNG.InputBridge.Instance.XButton
+            {
+                startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
+                prefabName = myObjects[SpawnCounter].name;
+                startLocation.activateBad = true;
+                Realtime.Instantiate(prefabName);
+                SpawnCounter++;
+
+            }
         }
-
-        if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool)
-        //BNG.InputBridge.Instance.XButton
+        if (SpawnCounter + 1 > myObjects.Length)
         {
-            startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
-            prefabName = myObjects[SpawnCounter].name;
-            startLocation.activateBad = true;
-            Realtime.Instantiate(prefabName);
-            SpawnCounter++;
-
+            Debug.Log("No spowning");
         }
 
     }
