@@ -27,7 +27,7 @@ public class RandomObjSpawner : MonoBehaviour
     {
         if (SpawnCounter < myObjects.Length)
         {
-            if (Input.GetKeyDown(KeyCode.G) && menuCode.checkBool || Input.GetKeyDown(KeyCode.H) && menuCode.checkBool)
+            if (Input.GetKeyDown(KeyCode.G) && menuCode.checkBool || BNG.InputBridge.Instance.YButton && menuCode.checkBool)
             //BNG.InputBridge.Instance.YButton
             {
                 startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
@@ -38,7 +38,7 @@ public class RandomObjSpawner : MonoBehaviour
 
             }
 
-            if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool)
+            if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool || BNG.InputBridge.Instance.XButton && menuCode.checkBool)
             //BNG.InputBridge.Instance.XButton
             {
                 startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
