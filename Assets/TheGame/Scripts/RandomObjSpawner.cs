@@ -7,7 +7,7 @@ public class RandomObjSpawner : MonoBehaviour
 {
     public GameObject[] goodObjects; //list with all the Spawners
 
-    public GameObject[] badObjects; //list with the bad objects
+    public GameObject[] badObjects;
 
     private string prefabName; //ame of the selected prefab in the spawners
 
@@ -47,8 +47,8 @@ public class RandomObjSpawner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool || BNG.InputBridge.Instance.XButton && menuCode.checkBool)
             //BNG.InputBridge.Instance.XButton
             {
-                startLocation = badObjects[SpawnCounter].GetComponent<StartLocation>();
-                prefabName = badObjects[SpawnCounter].name;
+                startLocation = goodObjects[SpawnCounter].GetComponent<StartLocation>();
+                prefabName = goodObjects[SpawnCounter].name;
                 startLocation.activateBad = true;
                 Realtime.Instantiate(prefabName);
                 SpawnCounter++;
