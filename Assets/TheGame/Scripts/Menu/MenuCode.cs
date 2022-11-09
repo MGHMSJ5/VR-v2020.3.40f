@@ -15,11 +15,20 @@ public class MenuCode : MonoBehaviour
     public static bool ifTherapist;
     public bool checkBool;
 
+    public GameObject controlText;
 
     private void Start()
     {
         checkBool = ifTherapist;
         SoundSlider.value = sliderValue;
+    }
+
+    public void Update()
+    {
+        if (ifTherapist == false)
+        {
+            controlText.SetActive(false);
+        }
     }
 
     //new
