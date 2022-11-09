@@ -5,7 +5,10 @@ using Normal.Realtime;
 
 public class RandomObjSpawner : MonoBehaviour
 {
-    public GameObject[] myObjects; //list with all the Spawners
+    public GameObject[] goodObjects; //list with all the Spawners
+
+    public GameObject[] badObjects;
+
     private string prefabName; //ame of the selected prefab in the spawners
 
     public GameObject good;
@@ -27,14 +30,14 @@ public class RandomObjSpawner : MonoBehaviour
 
     void Update()
     {
-        if (SpawnCounter < myObjects.Length)
+        if (SpawnCounter < goodObjects.Length)
         {
             if (Input.GetKeyDown(KeyCode.G) && menuCode.checkBool || BNG.InputBridge.Instance.YButton && menuCode.checkBool) 
                 //if 'G' is pressed, and you selected therapist in menu / pressed Y on VR controller and selected therapist
             //BNG.InputBridge.Instance.YButton
             {
-                startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();//get the script
-                prefabName = myObjects[SpawnCounter].name;//get the name of the prefab
+                startLocation = goodObjects[SpawnCounter].GetComponent<StartLocation>();//get the script
+                prefabName = goodObjects[SpawnCounter].name;//get the name of the prefab
                 startLocation.activateGood = true; //enable the 'good' empty gameobject
                 Realtime.Instantiate(prefabName); //instantate
                 SpawnCounter++; //go to next prefab in list
@@ -44,15 +47,15 @@ public class RandomObjSpawner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool || BNG.InputBridge.Instance.XButton && menuCode.checkBool)
             //BNG.InputBridge.Instance.XButton
             {
-                startLocation = myObjects[SpawnCounter].GetComponent<StartLocation>();
-                prefabName = myObjects[SpawnCounter].name;
+                startLocation = goodObjects[SpawnCounter].GetComponent<StartLocation>();
+                prefabName = goodObjects[SpawnCounter].name;
                 startLocation.activateBad = true;
                 Realtime.Instantiate(prefabName);
                 SpawnCounter++;
 
             }
         }
-        if (SpawnCounter == myObjects.Length) //if you have spawned the last prefab in the list
+        if (SpawnCounter == goodObjects.Length) //if you have spawned the last prefab in the list
         {
             finishedText.SetActive(true); //make 'Finished!' text appear
         }
@@ -64,14 +67,14 @@ public class RandomObjSpawner : MonoBehaviour
     public void SpawnGood()
     {
 
-        good = myObjects[SpawnCounter].transform.GetChild(0).gameObject;
+        good = goodObjects[SpawnCounter].transform.GetChild(0).gameObject;
         good.SetActive(true);
     }
 
     public void SpawnBad()
     {
 
-        bad = myObjects[SpawnCounter].transform.GetChild(1).gameObject;
+        bad = goodObjects[SpawnCounter].transform.GetChild(1).gameObject;
         bad.SetActive(true);
     }
 }

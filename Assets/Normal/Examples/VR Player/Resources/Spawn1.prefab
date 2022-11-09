@@ -85,12 +85,17 @@ MonoBehaviour:
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
   _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
+<<<<<<< HEAD
   _components:
   - componentID: 1
     component: {fileID: 0}
   _childViews:
   - componentID: 1
     component: {fileID: 0}
+=======
+  _components: []
+  _childViews: []
+>>>>>>> parent of 9fa7baf (wd)
 --- !u!114 &5635596108659476285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,8 +111,6 @@ MonoBehaviour:
   startLocation: {x: 60, y: -49.73266, z: 45}
   good: {fileID: 6460338629696142808}
   bad: {fileID: 2567467771591407748}
-  activateGood: 0
-  activateBad: 0
 --- !u!1 &6460338629696142808
 GameObject:
   m_ObjectHideFlags: 0
