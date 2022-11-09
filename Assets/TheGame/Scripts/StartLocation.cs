@@ -8,8 +8,8 @@ public class StartLocation : MonoBehaviour
     public GameObject good; //de empty gameobject with the 'good' objects
     public GameObject bad; //de empty gameobject with the 'bad' objects
 
-    public bool activateGood = false; //wil be activated if 'G' is pressed, from other script
-    public bool activateBad = false; //wil be activated if 'B' is pressed
+    public bool activateGood; //wil be activated if 'G' is pressed, from other script
+    public bool activateBad; //wil be activated if 'B' is pressed
     // Start is called before the first frame update
     void Start()
     {
