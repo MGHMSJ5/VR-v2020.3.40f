@@ -20,6 +20,7 @@ public class RandomObjSpawner : MonoBehaviour
     [SerializeField] GameObject menuScript; //the gameobject with the menuscript
 
     StartLocation startLocation; //will be the script from the gameobject from the list
+    StartBad startBad;
 
     public GameObject finishedText; //will be the 'finished' text when everything is spawned
 
@@ -38,7 +39,7 @@ public class RandomObjSpawner : MonoBehaviour
             {
                 startLocation = goodObjects[SpawnCounter].GetComponent<StartLocation>();//get the script
                 prefabName = goodObjects[SpawnCounter].name;//get the name of the prefab
-                startLocation.activateGood = true; //enable the 'good' empty gameobject
+                //startLocation.activateGood = true; //enable the 'good' empty gameobject
                 Realtime.Instantiate(prefabName); //instantate
                 SpawnCounter++; //go to next prefab in list
 
@@ -47,9 +48,9 @@ public class RandomObjSpawner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool || BNG.InputBridge.Instance.XButton && menuCode.checkBool)
             //BNG.InputBridge.Instance.XButton
             {
-                startLocation = badObjects[SpawnCounter].GetComponent<StartLocation>();
+                startBad = badObjects[SpawnCounter].GetComponent<StartBad>();
                 prefabName = badObjects[SpawnCounter].name;
-                startLocation.activateBad = true;
+                //startBad.activateBad = true;
                 Realtime.Instantiate(prefabName);
                 SpawnCounter++;
 
