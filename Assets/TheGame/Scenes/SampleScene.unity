@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.64996094, g: 0.69177765, b: 0.6839953, a: 1}
+  m_IndirectSpecularColor: {r: 0.22912742, g: 0.39664614, b: 0.53492206, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5380,18 +5380,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 586500264}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &596993396 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5247598279553246291, guid: 79d6eb9496d140a4c953d23ac9677d1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1395645481}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &602536462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5548,11 +5536,11 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1395645481}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &634575433
+--- !u!114 &634575433 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5443411954663167273, guid: 79d6eb9496d140a4c953d23ac9677d1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1395645481}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634575431}
   m_Enabled: 1
@@ -5560,10 +5548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee2a613e66c68e45b01846985c1c4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 1
-  BlacknessAppear: {fileID: 49724359}
-  SoundSlider: {fileID: 596993396}
-  checkBool: 0
 --- !u!4 &637962125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2374709128866443160, guid: 2e995532dc566f9439e61564744b7110,
@@ -8211,6 +8195,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.00004801154
       objectReference: {fileID: 0}
+    - target: {fileID: 5443411954663167273, guid: 79d6eb9496d140a4c953d23ac9677d1c,
+        type: 3}
+      propertyPath: BlacknessAppear
+      value: 
+      objectReference: {fileID: 49724359}
     - target: {fileID: 5834788133507861450, guid: 79d6eb9496d140a4c953d23ac9677d1c,
         type: 3}
       propertyPath: m_PresetInfoIsWorld

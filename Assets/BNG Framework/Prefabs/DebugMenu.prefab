@@ -1214,7 +1214,6 @@ GameObject:
   - component: {fileID: 1696223030993469500}
   - component: {fileID: 8429351883144898344}
   - component: {fileID: 5718976788813052129}
-  - component: {fileID: 7721314835953177284}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1369,22 +1368,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7721314835953177284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895110274077605641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee2a613e66c68e45b01846985c1c4ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneNumber: 1
-  BlacknessAppear: {fileID: 0}
-  SoundSlider: {fileID: 5247598279553246291}
-  checkBool: 0
 --- !u!1 &2942642558780701843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2098425191195283038}
+  - component: {fileID: 5443411954663167273}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -2326,6 +2310,22 @@ Transform:
   m_Father: {fileID: 2531304184159075351}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5443411954663167273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5801358558828092877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee2a613e66c68e45b01846985c1c4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNumber: 1
+  BlacknessAppear: {fileID: 0}
+  SoundSlider: {fileID: 5247598279553246291}
+  checkBool: 0
 --- !u!1 &5905442911336126524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,7 +2899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00005415389, y: -0.018072302}
+  m_AnchoredPosition: {x: -0.00005415389, y: -0.007998288}
   m_SizeDelta: {x: 0, y: 518}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4622642628710070510
@@ -3017,7 +3017,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5443411954663167273}
+        m_TargetAssemblyTypeName: MenuCode, Assembly-CSharp
+        m_MethodName: ChangeSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7621332730811191059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,7 +3276,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7721314835953177284}
+      - m_Target: {fileID: 5443411954663167273}
         m_TargetAssemblyTypeName: MenuCode, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
