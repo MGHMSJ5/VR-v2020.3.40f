@@ -15,8 +15,6 @@ public class RandomObjSpawner : MonoBehaviour
     MenuCode menuCode; //wil be the menu script
     [SerializeField] GameObject menuScript; //the gameobject with the menuscript
 
-    StartLocation startLocation; //will be the script from the gameobject from the list
-
     public GameObject finishedText; //will be the 'finished' text when everything is spawned
 
 
@@ -33,18 +31,14 @@ public class RandomObjSpawner : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.G) && menuCode.checkBool || BNG.InputBridge.Instance.YButton && menuCode.checkBool) 
                 //if 'G' is pressed, and you selected therapist in menu / pressed Y on VR controller and selected therapist
             {
-                startLocation = goodObjects[SpawnCounter].GetComponent<StartLocation>();//get the script
                 prefabName = goodObjects[SpawnCounter].name;//get the name of the prefab
-                //startLocation.activateGood = true; //enable the 'good' empty gameobject
                 Realtime.Instantiate(prefabName); //instantate
                 SpawnCounter++; //go to next prefab in list
             }
             //↓ the following if is the same as the previous one, but for spawning the 'bad' props
             if (Input.GetKeyDown(KeyCode.B) && menuCode.checkBool || BNG.InputBridge.Instance.XButton && menuCode.checkBool)
             {
-                startLocation = badObjects[SpawnCounter].GetComponent<StartLocation>();
                 prefabName = badObjects[SpawnCounter].name;
-                //startLocation.activateBad = true;
                 Realtime.Instantiate(prefabName);
                 SpawnCounter++;
             }

@@ -11,15 +11,15 @@ public class MenuCode : MonoBehaviour
 
     public Slider SoundSlider; //this will be the slider
     public static float sliderValue = 0.5f; //this will be used to set the value of the slider. Is static so that the value won't change when changing scenes
-    //new
+
     public static bool ifTherapist; //will be used to see if the player selected therapist. Is static so that the value won't change when changing scenes
-    public bool checkBool;
+    public bool checkBool; //will be used as ifTherapist in the other script. Becasue ifTherapist can't be used
 
     public GameObject controlText; //the text with an explination of the controlls
 
     private void Start()
     {
-        checkBool = ifTherapist;
+        checkBool = ifTherapist; //set the bool
         SoundSlider.value = sliderValue; //set the value of the slider
     }
 
@@ -30,8 +30,6 @@ public class MenuCode : MonoBehaviour
             controlText.SetActive(false); //the controls text will be disableds
         }
     }
-
-    //new
 
     public void PlayGamePatient() //a function that'll be called whenever the 'Play'button is pressed
     {
