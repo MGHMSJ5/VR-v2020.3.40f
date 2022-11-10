@@ -40,9 +40,7 @@ public class MenuCode : MonoBehaviour
         StartCoroutine(WaitForBlack()); //wait 1 sec (for the black to appear), then change scene
 
     }
-
-
-
+    
     public void PlayGameTherapist() //a function that'll be called whenever the 'Play'button is pressed
     {
         ifTherapist = true; //the player clicked the therapist. This bool will be used in the spawn scipt
