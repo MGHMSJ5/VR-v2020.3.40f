@@ -68,8 +68,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLocation: {x: 5.765888, y: -14.46986, z: 37.06197}
-  good: {fileID: 8700310336779659422}
-  bad: {fileID: 8700310337045205342}
   activateGood: 0
   activateBad: 0
 --- !u!1 &8700310336779659422

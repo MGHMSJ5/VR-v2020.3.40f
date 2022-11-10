@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+using UnityEngine.AI; //need this
 
 public class AIWalk : MonoBehaviour
 {
@@ -9,14 +9,12 @@ public class AIWalk : MonoBehaviour
     public Transform[] waypoints; //array list of waypoints
     int waypointindex; //int that will be used to select different waypoints
     Vector3 target; //will be used to get the location of the waypoint(s)
-    // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>(); //get the NavMeshAgent from this object
         UpdateDestination(); //start the first destination: the first waypoint
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Vector3.Distance(transform.position, target) < 1)//if the distance between the Object, and the waypoint target is less than 1 ↓
@@ -40,6 +38,5 @@ public class AIWalk : MonoBehaviour
             waypointindex = 0; //set back to start, the first waypoint
             
         }
-
     }
 }
